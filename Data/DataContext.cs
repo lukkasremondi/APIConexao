@@ -9,5 +9,7 @@ namespace APIConexao.Data
 
         public DbSet<Pessoa> pessoa {get;set;}
 
+        public DbSet<Estado> trancado {get;set;}
+
     }
 }
