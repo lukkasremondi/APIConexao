@@ -45,6 +45,14 @@ namespace APIConexao.Controllers
 
         }
 
+        [HttpPut("api")]
+        public async Task<ActionResult> editar([FromBody] Pessoa p){
+            
+            dc.pessoa.Update(p);
+            await dc.SaveChangesAsync();
+            return Ok(p);
+        }
+
 
         [HttpGet("oi")]
         public string oi(){
