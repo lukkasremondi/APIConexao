@@ -23,7 +23,7 @@ namespace APIConexao.Controllers
 
         public async Task<ActionResult> cadastrar([FromBody] Estado e){
 
-            dc.trancado.Add(e);
+            dc.tb_trancado.Add(e);
             await dc.SaveChangesAsync();
 
             return Created("Status da porta", e);
@@ -32,7 +32,7 @@ namespace APIConexao.Controllers
         [HttpGet("estado")]
         public async Task<ActionResult> listar(){
 
-            var dados = await dc.trancado.ToListAsync();
+            var dados = await dc.tb_trancado.ToListAsync();
             return Ok(dados);
 
         }
@@ -40,7 +40,7 @@ namespace APIConexao.Controllers
         [HttpGet("estado/{codigo}")]
         public Estado filtrar(int codigo){
 
-            Estado e = dc.trancado.Find(codigo);
+            Estado e = dc.tb_trancado.Find(codigo);
 
             return e;
 
@@ -49,7 +49,7 @@ namespace APIConexao.Controllers
         [HttpPut("estado")]
         public async Task<ActionResult> editar([FromBody] Estado e){
             
-            dc.trancado.Update(e);
+            dc.tb_trancado.Update(e);
             await dc.SaveChangesAsync();
             return Ok(e);
         }
@@ -64,7 +64,7 @@ namespace APIConexao.Controllers
             }
             else{
 
-                dc.trancado.Remove(e);
+                dc.tb_trancado.Remove(e);
                 await dc.SaveChangesAsync();
                 return Ok();
             }

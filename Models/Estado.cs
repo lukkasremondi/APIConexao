@@ -7,7 +7,7 @@ namespace APIConexao.Models
         [Key]
         public int id {get;set;}
 
-        public int trancado {get;set;}
+        public int status {get;set;}
         
     }
 }
