@@ -19,7 +19,6 @@ C:\Users\lukka\Documents\APIConexao\APIConexao\obj\Debug\net5.0\APIConexao.cspro
 C:\Users\lukka\Documents\APIConexao\APIConexao\obj\Debug\net5.0\APIConexao.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\lukka\Documents\APIConexao\APIConexao\obj\Debug\net5.0\APIConexao.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\lukka\Documents\APIConexao\APIConexao\obj\Debug\net5.0\staticwebassets\APIConexao.StaticWebAssets.Manifest.cache
-C:\Users\lukka\Documents\APIConexao\APIConexao\obj\Debug\net5.0\staticwebassets\APIConexao.StaticWebAssets.xml
 C:\Users\lukka\Documents\APIConexao\APIConexao\obj\Debug\net5.0\scopedcss\bundle\APIConexao.styles.css
 C:\Users\lukka\Documents\APIConexao\APIConexao\obj\Debug\net5.0\APIConexao.RazorTargetAssemblyInfo.cache
 C:\Users\lukka\Documents\APIConexao\APIConexao\obj\Debug\net5.0\APIConexao.csproj.CopyComplete
