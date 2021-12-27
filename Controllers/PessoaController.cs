@@ -1,3 +1,4 @@
+using System.Net;
 using System.Threading.Tasks;
 using APIConexao.Data;
 using Microsoft.AspNetCore.Mvc;
@@ -51,6 +52,22 @@ namespace APIConexao.Controllers
             dc.pessoa.Update(p);
             await dc.SaveChangesAsync();
             return Ok(p);
+        }
+
+        [HttpDelete("api/{codigo}")]
+        public async Task<ActionResult> remover(int codigo){
+            
+            Pessoa p = filtrar(codigo);
+
+            if(p == null){
+                return NotFound();
+            }
+            else{
+
+                dc.pessoa.Remove(p);
+                await dc.SaveChangesAsync();
+                return Ok();
+            }
         }
 
 
