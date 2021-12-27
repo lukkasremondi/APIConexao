@@ -36,6 +36,15 @@ namespace APIConexao.Controllers
 
         }
 
+        [HttpGet("api/{codigo}")]
+        public Pessoa filtrar(int codigo){
+
+            Pessoa p = dc.pessoa.Find(codigo);
+
+            return p;
+
+        }
+
 
         [HttpGet("oi")]
         public string oi(){
