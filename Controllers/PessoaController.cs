@@ -28,6 +28,14 @@ namespace APIConexao.Controllers
             return Created("Objeto Pessoa", p);
         }
 
+        [HttpGet("api")]
+        public async Task<ActionResult> listar(){
+
+            var dados = await dc.pessoa.ToListAsync();
+            return Ok(dados);
+
+        }
+
 
         [HttpGet("oi")]
         public string oi(){
