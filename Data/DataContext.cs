@@ -10,6 +10,7 @@ namespace APIConexao.Data
         public DbSet<Pessoa> pessoa {get;set;}
 
         public DbSet<Estado> tb_trancado {get;set;}
+        public DbSet<Trancar> tb_trancar {get;set;}
 
     }
 }
